@@ -44,7 +44,7 @@ export default function CountdownTimer({ lastGMTimestamp, onClose }: CountdownTi
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-      <div className="bg-gradient-to-br from-purple-700 to-purple-900 rounded-3xl p-8 max-w-md w-full shadow-2xl text-center">
+      <div className="bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl p-8 max-w-md w-full shadow-2xl text-center">
         <h2 className="text-white text-3xl font-bold mb-4">
           Already GM&apos;d Today! 🎉
         </h2>
@@ -54,17 +54,17 @@ export default function CountdownTimer({ lastGMTimestamp, onClose }: CountdownTi
         </div>
 
         <div className="flex justify-center gap-4 mb-8">
-          <div className="bg-purple-800/50 rounded-xl p-4 min-w-[80px]">
+          <div className="bg-indigo-900/50 rounded-xl p-4 min-w-[80px]">
             <div className="text-white text-4xl font-bold">{formatTime(timeLeft.hours)}</div>
-            <div className="text-purple-300 text-sm">Hours</div>
+            <div className="text-teal-400 text-sm">Hours</div>
           </div>
-          <div className="bg-purple-800/50 rounded-xl p-4 min-w-[80px]">
+          <div className="bg-indigo-900/50 rounded-xl p-4 min-w-[80px]">
             <div className="text-white text-4xl font-bold">{formatTime(timeLeft.minutes)}</div>
-            <div className="text-purple-300 text-sm">Minutes</div>
+            <div className="text-teal-400 text-sm">Minutes</div>
           </div>
-          <div className="bg-purple-800/50 rounded-xl p-4 min-w-[80px]">
+          <div className="bg-indigo-900/50 rounded-xl p-4 min-w-[80px]">
             <div className="text-white text-4xl font-bold">{formatTime(timeLeft.seconds)}</div>
-            <div className="text-purple-300 text-sm">Seconds</div>
+            <div className="text-teal-400 text-sm">Seconds</div>
           </div>
         </div>
 

@@ -215,7 +215,7 @@ export default function GMModal({ onClose }: GMModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-      <div className="bg-gradient-to-br from-purple-700 to-purple-900 rounded-3xl p-8 max-w-md w-full shadow-2xl">
+      <div className="bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl p-8 max-w-md w-full shadow-2xl">
         <h2 className="text-white text-4xl font-bold text-center mb-6">
           Choose GM Type
         </h2>
@@ -225,14 +225,14 @@ export default function GMModal({ onClose }: GMModalProps) {
             <button
               onClick={handleGM}
               disabled={isPending}
-              className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-6 rounded-2xl text-2xl font-bold hover:scale-105 transition-transform disabled:opacity-50"
+              className="w-full bg-gradient-to-r from-cyan-600 to-emerald-500 text-white py-6 rounded-2xl text-2xl font-bold hover:scale-105 transition-transform disabled:opacity-50"
             >
               {isPending ? "Sending..." : "GM"}
             </button>
 
             <button
               onClick={handleGMToFriend}
-              className="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white py-6 rounded-2xl text-2xl font-bold hover:scale-105 transition-transform"
+              className="w-full bg-gradient-to-r from-teal-400 to-cyan-600 text-white py-6 rounded-2xl text-2xl font-bold hover:scale-105 transition-transform"
             >
               GM to a Fren
             </button>
@@ -251,11 +251,11 @@ export default function GMModal({ onClose }: GMModalProps) {
               placeholder="ENS, Basename, or address (0x...)"
               value={friendAddress}
               onChange={(e) => setFriendAddress(e.target.value)}
-              className="w-full bg-purple-800/50 text-white py-4 px-6 rounded-xl text-lg placeholder-purple-300"
+              className="w-full bg-indigo-900/50 text-white py-4 px-6 rounded-xl text-lg placeholder-teal-400"
             />
 
             {friendAddress.includes('.') && (
-              <div className="text-sm text-purple-300 px-2">
+              <div className="text-sm text-teal-400 px-2">
                 {isResolving && "Resolving..."}
                 {!isResolving && resolvedAddress && (
                   <span className="text-green-400">
@@ -271,7 +271,7 @@ export default function GMModal({ onClose }: GMModalProps) {
             <button
               onClick={handleSendGMToFriend}
               disabled={isPending}
-              className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-6 rounded-2xl text-2xl font-bold hover:scale-105 transition-transform disabled:opacity-50"
+              className="w-full bg-gradient-to-r from-cyan-600 to-emerald-500 text-white py-6 rounded-2xl text-2xl font-bold hover:scale-105 transition-transform disabled:opacity-50"
             >
               {isPending ? "Sending..." : "Send GM"}
             </button>

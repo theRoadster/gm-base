@@ -17,7 +17,7 @@ export default function WalletConnect() {
   if (!mounted) {
     return (
       <button
-        className="fixed top-4 right-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold transition-all z-50 shadow-lg"
+        className="fixed top-4 right-4 bg-gradient-to-r from-cyan-600 to-emerald-500 hover:from-cyan-700 hover:to-emerald-600 text-white px-6 py-3 rounded-xl font-semibold transition-all z-50 shadow-lg"
       >
         Connect Wallet
       </button>
@@ -28,7 +28,7 @@ export default function WalletConnect() {
     return (
       <button
         onClick={() => disconnect()}
-        className="fixed top-4 right-4 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl font-semibold transition-colors z-50"
+        className="fixed top-4 right-4 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-xl font-semibold transition-colors z-50"
       >
         {address.slice(0, 6)}...{address.slice(-4)}
       </button>
@@ -38,7 +38,7 @@ export default function WalletConnect() {
   return (
     <button
       onClick={() => connect({ connector: connectors[0] })}
-      className="fixed top-4 right-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold transition-all z-50 shadow-lg"
+      className="fixed top-4 right-4 bg-gradient-to-r from-cyan-600 to-emerald-500 hover:from-cyan-700 hover:to-emerald-600 text-white px-6 py-3 rounded-xl font-semibold transition-all z-50 shadow-lg"
     >
       Connect Wallet
     </button>

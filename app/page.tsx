@@ -193,7 +193,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-pink-900 flex flex-col items-center justify-center p-4 relative overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-900 to-indigo-900 flex flex-col items-center justify-center p-4 relative overflow-hidden">
       {/* Wallet Connect Button */}
       <WalletConnect />
 
@@ -201,8 +201,8 @@ export default function Home() {
       <NetworkIndicator />
 
       {/* Background gradient circles */}
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl" />
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-cyan-600/30 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl" />
 
       <div className="z-10 w-full max-w-md">
         {/* Stats Section */}
@@ -220,11 +220,11 @@ export default function Home() {
             className="relative group"
           >
             {/* Ripple circles */}
-            <div className="absolute inset-0 rounded-full bg-purple-400/20 blur-2xl group-hover:bg-purple-400/30 transition-all duration-500" />
-            <div className="absolute inset-0 rounded-full bg-purple-400/10 scale-125 blur-3xl group-hover:scale-150 transition-all duration-700" />
+            <div className="absolute inset-0 rounded-full bg-teal-400/20 blur-2xl group-hover:bg-teal-400/30 transition-all duration-500" />
+            <div className="absolute inset-0 rounded-full bg-teal-400/10 scale-125 blur-3xl group-hover:scale-150 transition-all duration-700" />
 
             {/* Main button */}
-            <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-white text-2xl font-bold shadow-2xl group-hover:scale-105 transition-transform">
+            <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-cyan-600 to-emerald-500 flex items-center justify-center text-white text-2xl font-bold shadow-2xl group-hover:scale-105 transition-transform">
               <div className="text-center">
                 <div className="text-sm opacity-80 mb-2">
                   {mounted && address ? `${address.slice(0, 6)}...${address.slice(-4)}` : "Connect Wallet"}
